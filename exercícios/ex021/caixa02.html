@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../exercicio01/vscode-icon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        
+        nav{
+            background-color: dimgrey;
+            padding: 3px 3px 3px 10px;
+            border-radius: 10px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.404);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        nav > a:hover{
+            color: #a5a5a5;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.329);
+        }
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        article > aside{
+            background-color: #a5a5a5;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            border-radius: 10px;
+        }
+        footer > p{
+            text-align: center;
+            margin: 0px;
+        }
+        p{
+            text-align: justify;
+            text-indent: 30px;
+        }
+        aside > p{
+            text-indent: 8px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h1>Assunto principal</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas natus repellendus maxime rerum, ratione, totam iste eos deserunt rem autem ex, optio vero veritatis omnis commodi! Dolorum ipsum ea rem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tempore, in enim quos libero totam assumenda odit qui iste praesentium voluptate veniam natus accusamus necessitatibus id itaque dolore quaerat vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic voluptatibus voluptate. Pariatur, voluptas mollitia nemo quas omnis quibusdam perferendis saepe, odit, ea facere architecto quis tempora ex ducimus aliquid! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aperiam ratione provident libero omnis, rem expedita veniam saepe eaque, aspernatur sed ipsum facere praesentium incidunt error ipsam at aut nulla?</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis recusandae consectetur accusantium, ipsa, ipsam harum a ratione quas quo beatae! Consequuntur expedita culpa distinctio eos dolor, quam consectetur odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga similique modi eos magni? Modi earum dignissimos voluptatum tempore tenetur, sed hic vitae labore alias soluta illo et, amet, dolorem cupiditate.</p>
+                <aside>
+                    <p>Artigo escrito Lorem</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Outra noticia sobre o Lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error optio quo repellendus voluptatum ut porro repellat, numquam vitae delectus deserunt dolor dignissimos velit amet doloribus mollitia dolores fugit, rerum ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam ratione autem libero mollitia corporis distinctio error harum sequi adipisci culpa quia nostrum beatae minus ipsa tempora, aperiam optio. Possimus.</p>
+                <aside>
+                    <p>Artigo escrito Lorem</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Deus Kalel</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

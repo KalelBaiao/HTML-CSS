@@ -1,0 +1,45 @@
+body{
+    background-color: #1a1a1a;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+}
+img{
+    width: 200px;
+    margin: 2px 2px 2px 2px;
+}
+
+div{
+    margin: 0px auto;
+    width: 420px;
+}
+
+.video{
+    margin: 0px auto;
+    width: 560px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffffcb;
+    text-align: center;
+    font-size: 13pt;
+}
+
+.voltar{
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.curso:hover{
+    color: white;
+}
