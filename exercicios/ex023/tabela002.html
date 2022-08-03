@@ -12,14 +12,32 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
         thead, tfoot{
-            background-color: gray;
+            background-color: #5d5d5d;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #5d5d5d;
+        }
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
         }
         .num{
             text-align: right ;
@@ -31,6 +49,7 @@
     <!-- 
         Anatomia para tabelas grandes:
         TABLE
+        CAPITION
             THEAD
                 TR, TD, TH
             TBODY
@@ -39,10 +58,11 @@
                 TR, TD, TH
      -->
      <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -57,14 +77,93 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">95 812 813</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num">47 764 245</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">34 634 664</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">95 812 813</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num">47 764 245</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">34 634 664</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">95 812 813</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num">47 764 245</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">34 634 664</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">95 812 813</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num">47 764 245</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">34 634 664</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">95 812 813</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">47 764 245</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">34 634 664</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">95 812 813</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num">47 764 245</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">34 634 664</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">95 812 813</td>
+            </tr><tr>
+                <td>São Paulo</td>
+                <td class="num">47 764 245</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">34 634 664</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">95 812 813</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>153 013 274</strong></td>
             </tr>
         </tfoot>
      </table>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque provident repudiandae corporis sit, vel voluptate ea sapiente eaque qui, libero dolor. Earum hic quia corporis aliquam id. Reprehenderit, suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi deserunt sint temporibus illum quis soluta nihil recusandae rerum quibusdam necessitatibus, minus iusto eligendi odio amet magnam facere atque tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime, inventore, corporis cumque consectetur maiores unde nisi molestias cum ex commodi sunt dolorem non itaque illum aperiam iste ipsa natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ab aperiam nam maxime iure assumenda ipsam fugiat eum totam a dolorem dignissimos ut aspernatur voluptatibus architecto porro, odio natus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi, neque corporis tempore accusantium quas cupiditate est officiis laudantium repudiandae voluptates esse, repellendus assumenda nulla sequi. Possimus non rerum magnam.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque provident repudiandae corporis sit, vel voluptate ea sapiente eaque qui, libero dolor. Earum hic quia corporis aliquam id. Reprehenderit, suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi deserunt sint temporibus illum quis soluta nihil recusandae rerum quibusdam necessitatibus, minus iusto eligendi odio amet magnam facere atque tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime, inventore, corporis cumque consectetur maiores unde nisi molestias cum ex commodi sunt dolorem non itaque illum aperiam iste ipsa natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ab aperiam nam maxime iure assumenda ipsam fugiat eum totam a dolorem dignissimos ut aspernatur voluptatibus architecto porro, odio natus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi, neque corporis tempore accusantium quas cupiditate est officiis laudantium repudiandae voluptates esse, repellendus assumenda nulla sequi. Possimus non rerum magnam.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque provident repudiandae corporis sit, vel voluptate ea sapiente eaque qui, libero dolor. Earum hic quia corporis aliquam id. Reprehenderit, suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi deserunt sint temporibus illum quis soluta nihil recusandae rerum quibusdam necessitatibus, minus iusto eligendi odio amet magnam facere atque tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime, inventore, corporis cumque consectetur maiores unde nisi molestias cum ex commodi sunt dolorem non itaque illum aperiam iste ipsa natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ab aperiam nam maxime iure assumenda ipsam fugiat eum totam a dolorem dignissimos ut aspernatur voluptatibus architecto porro, odio natus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi, neque corporis tempore accusantium quas cupiditate est officiis laudantium repudiandae voluptates esse, repellendus assumenda nulla sequi. Possimus non rerum magnam.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque provident repudiandae corporis sit, vel voluptate ea sapiente eaque qui, libero dolor. Earum hic quia corporis aliquam id. Reprehenderit, suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi deserunt sint temporibus illum quis soluta nihil recusandae rerum quibusdam necessitatibus, minus iusto eligendi odio amet magnam facere atque tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime, inventore, corporis cumque consectetur maiores unde nisi molestias cum ex commodi sunt dolorem non itaque illum aperiam iste ipsa natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ab aperiam nam maxime iure assumenda ipsam fugiat eum totam a dolorem dignissimos ut aspernatur voluptatibus architecto porro, odio natus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi, neque corporis tempore accusantium quas cupiditate est officiis laudantium repudiandae voluptates esse, repellendus assumenda nulla sequi. Possimus non rerum magnam.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque provident repudiandae corporis sit, vel voluptate ea sapiente eaque qui, libero dolor. Earum hic quia corporis aliquam id. Reprehenderit, suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi deserunt sint temporibus illum quis soluta nihil recusandae rerum quibusdam necessitatibus, minus iusto eligendi odio amet magnam facere atque tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime, inventore, corporis cumque consectetur maiores unde nisi molestias cum ex commodi sunt dolorem non itaque illum aperiam iste ipsa natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ab aperiam nam maxime iure assumenda ipsam fugiat eum totam a dolorem dignissimos ut aspernatur voluptatibus architecto porro, odio natus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi, neque corporis tempore accusantium quas cupiditate est officiis laudantium repudiandae voluptates esse, repellendus assumenda nulla sequi. Possimus non rerum magnam.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque provident repudiandae corporis sit, vel voluptate ea sapiente eaque qui, libero dolor. Earum hic quia corporis aliquam id. Reprehenderit, suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi deserunt sint temporibus illum quis soluta nihil recusandae rerum quibusdam necessitatibus, minus iusto eligendi odio amet magnam facere atque tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime, inventore, corporis cumque consectetur maiores unde nisi molestias cum ex commodi sunt dolorem non itaque illum aperiam iste ipsa natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ab aperiam nam maxime iure assumenda ipsam fugiat eum totam a dolorem dignissimos ut aspernatur voluptatibus architecto porro, odio natus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi, neque corporis tempore accusantium quas cupiditate est officiis laudantium repudiandae voluptates esse, repellendus assumenda nulla sequi. Possimus non rerum magnam.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque provident repudiandae corporis sit, vel voluptate ea sapiente eaque qui, libero dolor. Earum hic quia corporis aliquam id. Reprehenderit, suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quasi deserunt sint temporibus illum quis soluta nihil recusandae rerum quibusdam necessitatibus, minus iusto eligendi odio amet magnam facere atque tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime, inventore, corporis cumque consectetur maiores unde nisi molestias cum ex commodi sunt dolorem non itaque illum aperiam iste ipsa natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ab aperiam nam maxime iure assumenda ipsam fugiat eum totam a dolorem dignissimos ut aspernatur voluptatibus architecto porro, odio natus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi, neque corporis tempore accusantium quas cupiditate est officiis laudantium repudiandae voluptates esse, repellendus assumenda nulla sequi. Possimus non rerum magnam.</p>
 </body>
 </html>
