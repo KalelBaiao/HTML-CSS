@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: rgba(62, 236, 62, 0.944);
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 8px 8px 8px;
+      }
+      h2{
+        text-align: center;
+        text-decoration: solid;
+        color: aliceblue;
+      }
+      p{
+        color: rgb(135, 244, 244);
+        background-color: green;
+        border-radius: 5px;
+        padding: 8px 8px 8px 8px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.262);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+
+      }
+        body > h1{
+            background-color: rgb(13, 255, 0);
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 10px 10px 10px rgba(26, 24, 24, 0.719);
+            border-radius: 8px;
+            text-shadow: 1px 1px 20px rgba(2, 249, 35, 0.522);
+        }
+        h2{
+            background-color: rgb(13, 255, 0);
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.36);
+            padding: 10px 10px 10px 10px;
+        }
+        div{
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.304);
+            padding-top: 10px;
+            background-color: rgb(73, 244, 73);
+            border-radius: 20px;
+        }
+    </style>
+    <title>Adicionando Conteúdos</title>
+  </head>
+  <body>
+    <h1>Conteúdos dentro de iframes</h1>
+    <h1>O PEDRO É UM GOSOTOSO E EU VOU DAR MINHA BUNDINHA PRA ELE, POIS ELE É UM GOSTOSO</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus
+      doloremque sequi illum cupiditate! Veniam possimus corporis, esse quia
+      eaque alias eius, quisquam deleniti modi rerum facere inventore adipisci
+      obcaecati.
+    </p>
+    <h2>Videos</h2>
+    <div>
+        <iframe
+         width="560" height="315" src="https://www.youtube.com/embed/tfUPbO_vGzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h2>Mapas do Google</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984578.9614791444!2d-60.06637897756489!3d-15.429926978767583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9396eed8f525e447%3A0xb39dae2e0a6df5dc!2sPontes%20e%20Lacerda%20-%20MT!5e0!3m2!1spt-BR!2sbr!4v1659923220557!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <h2>Mapas do Waze</h2>
+    <iframe
+      src="https://embed.waze.com/iframe?zoom=14&lat=-15.234452&lon=-59.328644&ct=livemap"
+      width="600"
+      height="450"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
